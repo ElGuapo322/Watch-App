@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  background-color: rgb(121, 126, 151);
+}
+
+.watch-app {
+  margin: 0 auto;
+  width: 800px;
+  border: 2px solid;
+  border-radius: 12px;
+  background-color: rgb(121, 126, 151);
+}
+.display-time {
+  font-family: Montserrat;
+  color: white;
+  font-size: 100px;
+  margin: 0 auto;
+  width: 53%;
+  margin-top: 5%;
+}
+.buttons {
+  color: white;
+  background-color: rgb(121, 126, 151);
+  border: 2px solid rgb(106, 109, 131);
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  border-radius: 50px;
+  justify-items: center;
+  transition: font-size 300ms, width 300ms, height 300ms, background-color 300ms;
+}
+.buttons:active {
+  background-color: rgb(242, 108, 82);
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+}
+.buttons:focus {
+  background-color: rgb(242, 108, 82);
+  border: none;
+  text-decoration: none;
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+}
+.buttons:disabled {
+  background-color: rgb(162, 169, 209);
+}
+.button-block {
+  width: 45%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+  align-items: center;
+}
+.lap-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 400px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+#lap-btn {
+  color: white;
+  background-color: rgb(121, 126, 151);
+  border: 2px solid rgb(106, 109, 131);
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  justify-items: center;
+  transition: font-size 300ms, width 300ms, height 300ms, background-color 300ms;
+  font-size: 20px;
+  margin-top: 20px;
+}
+#lap-btn:active {
+  background-color: rgb(242, 108, 82);
+  border: none;
+  text-decoration: none;
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+}
+#lap-btn:disabled {
+  background-color: rgb(162, 169, 209);
+}
+#start-btn:disabled {
+  background-color: rgb(242, 108, 82);
+  border: none;
+  text-decoration: none;
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+}
+.btn-block {
+  width: 60px;
+
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  color: white;
+  font-family: Montserrat;
+
+  width: 220px;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  .watch-app {
+    width: 100%;
+  }
+  .display-time {
+    font-size: 50px;
+    margin-top: 100px;
+  }
+  .button-block {
+    width: 60%;
+  }
+  .lap-time {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .button-block {
+    max-width: 250px;
+    min-width: 220px;
+  }
+  .display-time {
+    max-width: 220px;
+    min-width: 220px;
+  }
+}
